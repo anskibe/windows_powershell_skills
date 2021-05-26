@@ -73,13 +73,13 @@ $mainStatus = :execution while($executionCondition) {
 
         try {    
             
-            New-SmbMapping -LocalPath 'S:' -RemotePath "\\GRANDSERVER3\Share\backup\406" -UserName "username" -Password "password"
+            New-SmbMapping -LocalPath 'S:' -RemotePath "\\server\share\backup\406" -UserName "username" -Password "password"
 
             }
 
         catch {
          
-            Write-Host "There was an error mapping S: to \\GRANDSERVER3\Share\backup\406"
+            Write-Host "There was an error mapping S: to \\server\Share\backup\406"
             $executionCondition = $false
             break :execution
 
