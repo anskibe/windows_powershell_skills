@@ -73,7 +73,7 @@ $mainStatus = :execution while($executionCondition) {
 
         try {    
             
-            New-SmbMapping -LocalPath 'S:' -RemotePath "\\GRANDSERVER3\Share\backup\406" -UserName "406" -Password "re406motewest"
+            New-SmbMapping -LocalPath 'S:' -RemotePath "\\GRANDSERVER3\Share\backup\406" -UserName "username" -Password "password"
 
             }
 
